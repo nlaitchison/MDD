@@ -13,9 +13,13 @@
 
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <!-- Skeleton -->
+        <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
+        <!-- Webfonts -->
+        <link href='http://fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
         <!-- endbuild -->
-</head>
-  <body ng-app="newProjectApp">
+  </head>
+  <body ng-app="testProjectApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -24,9 +28,21 @@
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
+    <div id="wrapper">
+        <header>
+          <div class="container">
+            <h1 class="fivecolumns"><a href="#">Some Cool Bands </a></h1>
+          </div>
+        </header>
 
-    <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+      <div id="main_content" ng-controller="ProjectList">
+
+        <!-- Add your site or application content here -->
+        <div class="container" ng-view=""></div>
+
+      </div> <!-- main content -->
+
+    </div> <!-- end wrapper -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -47,11 +63,16 @@
         <script src="bower_components/angular-cookies/angular-cookies.js"></script>
         <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/firebase/firebase.js"></script>
+        <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+        <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
+        <script src="bower_components/angularfire/angularfire.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+         <script src="scripts/services/factory.js"></script>
         <!-- endbuild -->
 </body>
 </html>
