@@ -24,8 +24,12 @@ html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,
 }
 
 body{
-  font: 14px Helvetica; 
+  font: 14px Helvetica;
   font-weight: lighter;
+}
+
+a, label, body{
+  color: #555;
 }
 
 ul{
@@ -56,6 +60,7 @@ a{
 
 a:hover{
   opacity: .7;
+  color: #ec5b2e;
 }
 
 p{
@@ -72,6 +77,7 @@ p{
     ∆ Home
 ---------------------------------------------------------------------------------------------------*/
 
+
 header, .artist_list_info{
   background: #eee;
 }
@@ -81,10 +87,23 @@ header{
   margin-bottom: 25px;
 }
 
+nav ul{
+  width: 160px;
+/*  float: right;*/
+}
+
+nav ul li{
+  width: 70px;
+  padding: 0 5px;
+  margin: 18px 0 0;
+  float: left;
+}
+
 .artist_list_info{
   padding: 10px;
   margin: 10px 0 25px;
 }
+
 
 /* ---------------------------------------------------------------------------------------------------
     ∆ Details
@@ -93,3 +112,28 @@ header{
 .artist-info{
   padding: 20px 0;
 }
+
+
+/* ---------------------------------------------------------------------------------------------------
+    ∆ Details
+---------------------------------------------------------------------------------------------------*/
+
+.form_input{
+  margin-bottom: 8px;
+}
+
+.form_input label{
+  text-align: right;
+  width: 100px;
+  line-height: 20px;
+}
+
+.form_input input, .form_input textarea{
+  border-radius: 2px;
+  border: 1px solid #555;
+  padding: 6px;
+}
+
+
+
+

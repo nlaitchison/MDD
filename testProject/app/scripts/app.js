@@ -8,12 +8,16 @@ var App = angular.module('testProjectApp', [
 App.config(function ($routeProvider) {
   $routeProvider
     .when('/',{
-      templateUrl: 'views/main.tpl',
+      templateUrl: 'views/projectList.tpl',
       controller : 'ProjectList'
     })
     .when('/detail/:id',{
-      templateUrl: 'views/detail.tpl',
+      templateUrl: 'views/projectDetail.tpl',
       controller : 'ProjectDetail'
+    })
+    .when('/newProject',{
+      templateUrl: 'views/projectNew.tpl',
+      controller : 'ProjectNew'
     })
     .otherwise({
       redirectTo: '/'
