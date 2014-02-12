@@ -8,7 +8,7 @@ App.controller('ProjectList', ['$scope', 'FireConn', function($scope, FireConn){
 
   $scope.bands = FireConn;
 
-    console.log('home');
+  console.log('home');
 
 }]);
 

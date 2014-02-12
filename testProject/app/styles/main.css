@@ -88,12 +88,12 @@ header{
 }
 
 nav ul{
-  width: 160px;
+  width: auto;
 /*  float: right;*/
 }
 
 nav ul li{
-  width: 70px;
+  width: auto;
   padding: 0 5px;
   margin: 18px 0 0;
   float: left;

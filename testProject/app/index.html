@@ -34,8 +34,10 @@
             <h1 class="six columns"><a href="#">Some Cool Bands </a></h1>
             <nav class="ten columns">
               <ul>
-                <li><a href="#">Home</li>
-                <li><a href="#/newProject">Add Band</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#/newProject">Add Band</a></li>
+                <li ng-hide="loginObject.user"><a ng-click="loginObject.$login('github')">Login with Github</a></li>
+                <li ng-show="loginObject.user"><a ng-click="loginObject.$logout()">Logout</a></li>
               </ul>
             </nav>
           </div>
